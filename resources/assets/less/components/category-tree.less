@@ -1,0 +1,27 @@
+.category-tree {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > li > .actions {
+        float: right;
+        opacity: 0;
+        transition: opacity 100ms ease-in;
+    }
+
+    > li > .actions > a {
+        text-decoration: none;
+    }
+
+    > li:hover > .actions {
+        opacity: 1;
+    }
+
+    > li > .category-tree {
+        margin-left: 15px;
+    }
+
+    > li.active > .title {
+        font-weight: bold;
+    }
+}
